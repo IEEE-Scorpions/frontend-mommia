@@ -7,16 +7,52 @@
     font-family: tajawal;
     text-decoration: none !important;
 }
-/* notice*//*=>*//* These are not the real colors, these are just colors that were added randomly,
-and when the real colors are obtained, they will be added and this comment removed */
+
 :root{
 --white-color: #FFFFFF;
---black-color: #060606;
---purple-color: #43425D;
---dark-black-color: #000000;
+--black-color: #000000;
 --grey-color: #989898;
 --btn-back:#E1E6EB;
 --dark-grey-color:#505050;
+--inputs-background: #181818;
+--gold-color:#C39B2C;
+--hover-gold:#EBC351;
+--light-white:#5C5C5C;
 --box-shadow: 0px 0px 20px #75757526;
---body-main-color: #F5F7F9;
 }
+
+/*========= main btn ========*/
+.btn{
+  background-color: var(--gold-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover{
+  background-color: var(--hover-gold);
+}
+/*========= main btn ===========*/
+
+
+/*========= main btn outline ========*/
+.btn-outline{
+  background-color: transparent;
+  border: 1px solid var(--gold-color);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gold-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-outline:hover{
+  background-color: var(--gold-color);
+  color: var(--white-color);
+}
+/*========= main btn outline ===========*/
