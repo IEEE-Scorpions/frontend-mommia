@@ -10,31 +10,34 @@
 
 :root{
 --white-color: #FFFFFF;
---black-color: #000000;
+--dark-black-color: #000000;
+--black-color:#0B0B0B;
 --grey-color: #989898;
 --btn-back:#E1E6EB;
 --dark-grey-color:#505050;
---inputs-background: #181818;
+--inputs-background: #313131;
 --gold-color:#C39B2C;
 --hover-gold:#EBC351;
 --light-white:#5C5C5C;
 --box-shadow: 0px 0px 20px #75757526;
 }
-
+body{
+  background-color: var(--black-color);
+}
 /*========= main btn ========*/
 .btn{
-  background-color: var(--gold-color);
+  background-color: var(--gold-color) !important;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 600;
-  color: var(--white-color);
+  color: var(--white-color) !important;
   cursor: pointer;
   transition: 0.3s;
 }
 .btn:hover{
-  background-color: var(--hover-gold);
+  background-color: var(--hover-gold) !important;
 }
 /*========= main btn ===========*/
 
@@ -42,17 +45,272 @@
 /*========= main btn outline ========*/
 .btn-outline{
   background-color: transparent;
-  border: 1px solid var(--gold-color);
+  border: 1px solid var(--gold-color) !important;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 600;
-  color: var(--gold-color);
+  color: var(--gold-color) !important;
   cursor: pointer;
   transition: 0.3s;
 }
 .btn-outline:hover{
+  background-color: var(--gold-color) !important;
+  color: var(--white-color) !important;
+}
+/*========= main btn outline ===========*/
+
+/*======== sign up page for tourgide ====*/
+
+/*
+==========================================
+==========nav============================
+==========================================
+*/
+nav.signup-nav .container{
+  position: relative;
+}
+
+nav.signup-nav .container h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: var(--hover-gold);
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+button.dropdown-toggle{
+  border-radius: 22px;
+  padding: 10px 2rem;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.dropdown-toggle::after {
+    margin-left: .6em;
+}
+button.dropdown-toggle:hover,
+button.dropdown-toggle:active,
+button.dropdown-toggle.show{
+  background-color: var(--hover-gold) !important;
+  
+}
+.dropdown-menu[data-bs-popper] {
+  right: 0px !important;
+  left: unset !important;
+}
+
+/*
+===========================================
+========form registration section==========
+===========================================
+*/
+body.for-sign{
+  position: relative;
+}
+.signup{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.for-sign  .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/sign3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: brightness(.5);
+}
+.for-sign  .overlay.sign-in{
+  height: 100vh;
+}
+.gender-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--inputs-background);
+  /* gap: 10px; */
+  border-radius: 5px;
+}
+
+.gender-label {
+  font-size: 24px;
+}
+
+.radio-button {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-radio-button {
+  position: relative;
+  cursor: pointer;
+  padding: 7px 20px;
+  background-color:var(--inputs-background);
+  color: var(--gold-color);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.radio-button:checked + .custom-radio-button {
   background-color: var(--gold-color);
   color: var(--white-color);
 }
-/*========= main btn outline ===========*/
+.form-control{
+  background-color: var(--inputs-background);
+  border: none;
+  color: var(--gold-color);
+}
+.form-control::placeholder{
+  color: var(--gold-color) !important;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: var(--hover-gold);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #ebc25191;
+}
+
+.signup label{
+  color: var(--white-color);
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.signup form .btn{
+  padding: 7px 100px !important;
+}
+.signup form .have-account{
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.signup form .have-account a{
+  color: var(--gold-color);
+  
+}
+/*======== sign up page for tourgide ====*/
+
+/*======== sign in tourgide =============*/
+
+.signup .signin-form{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+}
+.signup .signin-form form{
+  padding: 1rem;
+  width: 50%;
+}
+
+
+ .profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--p-color);
+  margin-bottom: 2rem;
+}
+
+ .profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+ .profile-photo input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.complete .all h2{
+  color: var(--gold-color);
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======== media query =======*/
+@media (max-width: 1024px){
+  .signup{
+    height: calc(100% - 60px) !important;
+  }
+}
+@media (max-width: 991px){
+  .signup{
+    height: calc(100% - 60px) !important;
+  }
+  nav.signup-nav .container h2 {
+    left: 0 !important;
+    transform: translate(7%,-50%);
+    font-size: 18px;
+}
+}
+@media (max-width: 768px){
+  .signup{
+    height: calc(100% - 60px) !important;
+  }
+  .sign{
+    height: calc(100vh - 60px) !important;
+  }
+  button.dropdown-toggle{
+    border-radius: 22px;
+    padding: 8px 1.6rem;
+    font-size: 20px;
+  }
+  .signup .signin-form form{
+    width: 100%;
+  }
+}
+@media (max-width: 425px){
+  .complete .all {
+    justify-content: center !important;
+  }
+
+}

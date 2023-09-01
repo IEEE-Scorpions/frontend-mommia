@@ -29,18 +29,114 @@
   <link rel="stylesheet" href="css/english-style.css">
 </head>
 
-<body>
+<body class="for-sign">
+  <div class="overlay"></div>
 
+  <nav class="signup-nav navbar">
+    <div class="container  d-flex justify-content-end">
+      <h2 class="text-center">registration</h2>
+      <!-- Example single danger button -->
+      <div class="btn-group ">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-globe-africa"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">arabic</li>
+          <li class="dropdown-item">english</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <section class="signup ">
 
+    <div class="container">
+      <form action="">
+        <div class="row gy-3">
+          <div class="col-md-6">
+            <div class="input">
+              <label for="firstname" class="label-form">first name</label>
+              <input type="text" class="form-control" id="firstname" placeholder="enter your first name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input">
+              <label for="lastname" class="label-form">last name</label>
+              <input type="text" class="form-control" id="lastname" placeholder="enter your last name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input">
+              <label for="nationality" class="label-form">national</label>
+              <select class="form-control" id="nationality">
+                <option value="eg">egypt</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+              </select>
+            </div>
 
-  <nav></nav>
+          </div>
+          <div class="col-md-6">
+            <div class="input">
+              <label for="dateofbirth" class="label-form">date of birth</label>
+              <input type="date" class="form-control" id="dateofbirth" placeholder="enter your day">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input">
+              <label for="email" class="label-form">email</label>
+              <input type="email" class="form-control" id="email" placeholder="enter your email">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input">
+              <label for="phone" class="label-form">phone number</label>
+              <input type="number" class="form-control" id="phone" placeholder="enter your phone number">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input">
+              <label for="pass" class="label-form">password</label>
+              <input type="password" class="form-control" id="pass" placeholder="enter your password">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input">
+              <label for="repass" class="label-form">write your password again</label>
+              <input type="password" class="form-control" id="repass" placeholder="renter your password">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="gender" class="label-form">chose your gender</label>
+            <div class="gender-buttons" id="gender">
+              <input type="radio" class="radio-button" id="male" name="gender" value="male" checked>
+              <label class="custom-radio-button" for="male">male</label>
+              <input type="radio" class="radio-button" id="female" name="gender" value="female">
+              <label class="custom-radio-button" for="female">female</label>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="input">
+              <label for="passport" class="label-form">passport or national ID</label>
+              <div class="form-control">
+                <input type="file" class="form-control opacity-0" id="passport" placeholder="enter your passport">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <a href="complete-tourgide.html" class="btn">continue</a>
+          </div>
+          <div class="col-md-12">
+            <p class="have-account">Already have an account? <a href="sign-in-tourgide.html">sign in</a></p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
 
-  <header></header>
-
-  <section></section>
-
-  <footer></footer>
 
 
 
@@ -55,5 +151,3 @@
   <!-- main js file -->
   <script src="js/main.js"></script>
 </body>
-
-</html>

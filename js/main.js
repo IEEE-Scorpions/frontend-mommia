@@ -1,5 +1,23 @@
-/*=========navbar============*/
+let profile_photo = document.getElementById('profile-photo');
+let photo = document.getElementById('photo');
+let file = document.getElementById('file');
 
+if( file !=null){
+  file.onchange = ()=>{
+    let choosedFile = file.files[0];
+    if(choosedFile){
+      let reader = new FileReader();
+      reader.onload = ()=>{
+        photo.setAttribute('src' , reader.result);
+      }
+      reader.readAsDataURL(choosedFile);
+    }
+  }
+}
+
+
+
+/*=========navbar============*/
 
 // Get the toggler element and controls element from the DOM
 const toggler = document.getElementById('toggler');
@@ -92,3 +110,5 @@ decrementButton.addEventListener('click', () => {
 });
 
 /*======= increment and decrement ======*/
+
+

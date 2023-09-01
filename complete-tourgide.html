@@ -9,7 +9,7 @@
   <meta property="og:image" content="">
   <meta property="og:url" content="https://ieee-scorpions.github.io/frontend-mommia/">
   <meta property="og:type" content="website">
-  <title>Sign in - Mommia</title>
+  <title>complete your sign up - Mommia</title>
 
   <!-- fav icon -->
   <link rel="icon" type="image/png" sizes="65x65" href="">
@@ -30,13 +30,11 @@
 </head>
 
 <body class="for-sign">
-  <div class="overlay sign-in"></div>
-
-
+  <div class="overlay"></div>
 
   <nav class="signup-nav navbar">
     <div class="container  d-flex justify-content-end">
-      <h2 class="text-center">welcome</h2>
+      <h2 class="text-center">complete your profile</h2>
       <!-- Example single danger button -->
       <div class="btn-group ">
         <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,28 +48,66 @@
     </div>
   </nav>
 
-  <section class="signup sign">
+  <section class="signup complete ">
 
-    <div class="container signin-form">
-      <form action="" class=" ">
-        <div class="row gy-3 ">
+    <div class="container">
+      <form action="">
+
+        <div class="row gy-3">
           <div class="col-md-12">
+            <div class="all d-flex align-items-center flex-wrap ">
+              <div class="profile-photo " id="profile-photo">
+                <img src="images/user.png" alt="" id="photo">
+                <input type="file" class="" accept="image/*" id="file">
+              </div>
+              <h2>user name</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
             <div class="input">
-              <label for="email" class="label-form">email</label>
-              <input type="email" class="form-control" id="email" placeholder="enter your email">
+              <label for="college" class="label-form">college</label>
+              <input type="text" class="form-control" id="college" placeholder="enter your college">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input">
+              <label for="cost" class="label-form">cost average</label>
+              <input type="number" class="form-control" id="cost" placeholder="enter your cost average">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="input">
+              <label for="work" class="label-form">If you work in a company , please enter the name</label>
+              <input type="text" class="form-control" id="work"
+                placeholder="If you work in a company , please enter the name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input">
+              <label for="languages" class="label-form">Your languages</label>
+              <input type="text" class="form-control" id="languages" placeholder="Your languages">
             </div>
           </div>
           <div class="col-md-12">
             <div class="input">
-              <label for="pass" class="label-form">password</label>
-              <input type="password" class="form-control" id="pass" placeholder="enter your password">
+              <label for="graduation" class="label-form">graduation certificate or courses certificate</label>
+              <div class="form-control">
+                <input type="file" class="form-control opacity-0" id="graduation"
+                  placeholder="Add your graduation certificate or courses certificate">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="input">
+              <label for="experience" class="label-form">About your experience</label>
+              <textarea class="form-control" id="experience" placeholder="About your experience" rows="5"
+                cols="20"></textarea>
             </div>
           </div>
           <div class="col-md-12">
-            <button class="btn ">sign in</button>
-          </div>
-          <div class="col-md-12">
-            <p class="have-account">Already have an account? <a href="sign-up-tourgide.html">sign up</a></p>
+            <button class="btn">sign up</button>
           </div>
         </div>
       </form>
@@ -91,7 +127,3 @@
   <!-- main js file -->
   <script src="js/main.js"></script>
 </body>
-
-</html>
-
-</html>
