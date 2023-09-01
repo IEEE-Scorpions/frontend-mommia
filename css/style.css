@@ -193,7 +193,7 @@ body.for-sign{
   text-transform: capitalize;
 }
 .signup form .btn{
-  padding: 7px 100px !important;
+  padding: 3px 90px !important;
 }
 .signup form .have-account{
   color: var(--white-color);
@@ -288,7 +288,7 @@ body.for-sign{
   }
   nav.signup-nav .container h2 {
     left: 0 !important;
-    transform: translate(7%,-50%);
+    transform: translate(17%,-50%);
     font-size: 18px;
 }
 }
@@ -307,10 +307,15 @@ body.for-sign{
   .signup .signin-form form{
     width: 100%;
   }
+  .signup label {
+    font-size: 15px;
+}
 }
 @media (max-width: 425px){
   .complete .all {
     justify-content: center !important;
   }
-
+  .signup form .btn {
+    width: 100%;
+}
 }
