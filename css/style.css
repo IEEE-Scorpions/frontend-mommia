@@ -130,9 +130,9 @@ body.for-sign{
   z-index: -1;
   filter: brightness(.5);
 }
-.for-sign  .overlay.sign-in{
+/* .for-sign  .overlay.sign-in{
   height: 100vh;
-}
+} */
 .gender-buttons {
   display: flex;
   justify-content: center;
@@ -297,7 +297,7 @@ body.for-sign{
     height: calc(100% - 60px) !important;
   }
   .sign{
-    height: calc(100vh - 60px) !important;
+    height: calc(101vh - 60px) !important;
   }
   button.dropdown-toggle{
     border-radius: 22px;
@@ -317,5 +317,10 @@ body.for-sign{
   }
   .signup form .btn {
     width: 100%;
+}
+.complete .all h2 {
+  margin-left: 0rem;
+  width: 100%;
+  text-align: center;
 }
 }
