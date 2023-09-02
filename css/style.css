@@ -112,11 +112,14 @@ body.for-sign{
   position: relative;
 }
 .signup{
-  height: calc(100vh - 60px);
+  height: calc(100% - 60px);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.sign{
+  height: calc(100vh - 60px) !important;
 }
 .for-sign  .overlay{
   position: absolute;
@@ -190,6 +193,7 @@ body.for-sign{
 }
 .signup form .btn{
   padding: 3px 90px !important;
+  margin-bottom: 1rem;
 }
 .signup form .have-account{
   color: var(--white-color);
@@ -275,7 +279,7 @@ body.for-sign{
 /*======== media query =======*/
 @media (max-width: 1024px){
   .signup{
-    height: calc(100% - 60px) !important;
+    height: calc(100% - 55px) !important;
   }
   .sign{
     height: calc(100vh - 60px) !important;
@@ -283,8 +287,9 @@ body.for-sign{
 }
 @media (max-width: 991px){
   .signup{
-    height: calc(100vh - 60px) !important;
+    height: calc(100vh - 55px) !important;
   }
+  
   nav.signup-nav .container h2 {
     left: 1rem !important;
     transform: translate(0%,-50%);
