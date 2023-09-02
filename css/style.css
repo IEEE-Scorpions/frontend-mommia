@@ -334,4 +334,14 @@ body.for-sign{
   width: 100%;
   text-align: center;
 }
+nav.signup-nav .container h2 {
+  left: 1rem !important;
+  transform: translate(0%,-50%);
+  font-size: 20px;
+}
+button.dropdown-toggle {
+  border-radius: 22px;
+  padding: 6px .8rem;
+  font-size: 19px;
+}
 }
